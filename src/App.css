@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+/* CreateNote.css */
+
+.main_note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input_field,
+.textarea_field {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input_field:focus,
+.textarea_field:focus {
+    border-color: #1976D2; /* Highlight border on focus */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.add_button {
+    background-color: #1976D2;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.add_button:hover {
+    background-color: #135BA2; /* Darker background on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.plus_sign {
+    font-size: 24px;
 }
+
+/* Note.css */
+
+.note {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.note:hover {
+    background-color: #e0e0e0; /* Lighter background on hover */
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+/* Style the delete icon */
+.delete_icon {
+    cursor: pointer;
+    color: #f44336; /* Red color for delete icon */
+    font-size: 24px;
+    float: right;
+}
+
+.delete_icon:hover {
+    color: #d32f2f; /* Darker red color on hover */
+}
+
+/* Header.css */
+
+.header {
+    background-color: #1976D2; /* Header background color */
+    color: #fff; /* Text color */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header img {
+    margin-right: 10px; /* Add spacing between the logo and text */
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
